@@ -7,6 +7,7 @@ import {
 import Contacto from './components/Contacto';
 import Inicio from './components/Inicio';
 import Nosotros from './components/Nosotros';
+import User from './components/User';
 
 function App() {
 	return (
@@ -42,6 +43,10 @@ function App() {
 				</div>
 				<hr />
 				<Switch>
+					<Route path='/nosotros/:id'>
+						<User />
+					</Route>
+
 					<Route path='/nosotros'>
 						<Nosotros />
 					</Route>
